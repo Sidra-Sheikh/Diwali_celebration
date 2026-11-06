@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Diwali from Sidra Sheikh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<button id="mute" aria-label="Mute music" aria-pressed="false">🔊</button>
+
+<main id="app">
+<!-- PAGE 1 -->
+<section class="page active" id="p1" aria-label="Intro">
+  <div class="lantern l1"></div><div class="lantern l2"></div>
+  <div class="flowers fl-tl" aria-hidden="true"></div>
+  <div class="skyline"></div>
+  <div class="center">
+    <div class="crest" aria-hidden="true">🪔</div>
+    <h1 class="script big"><span id="t1"></span><i class="caret" id="c1"></i></h1>
+    <p class="from serif"><span id="t2"></span><i class="caret" id="c2"></i></p>
+    <div class="lotus" aria-hidden="true">❀</div>
+    <button class="btn celebrate" id="start">Click here to celebrate together ✨</button>
+  </div>
+  <div class="floor"><div class="rangoli"></div>
+    <i class="mini d a"></i><i class="mini d b"></i><i class="mini d c"></i><i class="mini d e"></i></div>
+  <button class="skip" id="skip1">Skip intro</button>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="p2" aria-label="Light up the diyas">
+  <div class="garland" aria-hidden="true"></div>
+  <div class="center top">
+    <h2 class="script big">Light Up the Diyas</h2>
+    <p class="pill">☝ Click Each Diya to Light Them Up! ✨</p>
+  </div>
+  <div class="tray" id="tray"></div>
+  <div class="center bottom">
+    <p class="msg serif" id="beauty" hidden>Beautiful! You've filled this Diwali with light!</p>
+    <button class="btn" id="next2" disabled>Next Celebration →</button>
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page night" id="p3" aria-label="Crackers">
+  <div class="center top">
+    <h2 class="script big">Let's Celebrate with Crackers!</h2>
+    <p class="pill">☝ Choose a cracker and light it up! ✨</p>
+  </div>
+  <div class="city"></div>
+  <div class="rail"></div>
+  <div class="flowers fl-tl" aria-hidden="true"></div>
+  <div class="lantern l1"></div>
+  <div class="terrace"><div class="rangoli left"></div></div>
+  <div class="crackers" id="crackers">
+    <button data-c="anar" aria-label="Anar flower pot"><i class="anar"></i><span class="tag">Anar<br><small>(Flower Pot)</small></span></button>
+    <button data-c="chakri" aria-label="Chakri spinner"><i class="chakri"></i><span class="tag">Chakri<br><small>(Spinner)</small></span></button>
+    <button data-c="phul" aria-label="Phuljhari sparkler"><i class="phul"></i><span class="tag">Phuljhari<br><small>(Sparkler)</small></span></button>
+    <button data-c="rocket" aria-label="Rocket"><i class="rocket"></i><span class="tag">Rocket<br><small>(Sky Blast)</small></span></button>
+    <button data-c="sky" aria-label="Sky shots"><i class="sky"></i><span class="tag">Sky Shots<br><small>(Fireworks)</small></span></button>
+  </div>
+  <button class="btn cont" id="next3" hidden>↻ Replay Experience</button>
+</section>
+
+</main>
+<audio id="song" src="assets/happy-diwali.mp3" loop preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
