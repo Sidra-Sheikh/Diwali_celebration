@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2a0508">
+<title>Happy Diwali from Sidra Sheikh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<button id="mute" aria-label="Mute music" aria-pressed="false">🔊</button>
+<audio id="song" src="assets/happy-diwali.mp3" loop autoplay playsinline preload="auto"></audio>
+
+<div id="enter" role="button" tabindex="0" aria-label="Tap to start the Diwali celebration with music">
+  <div class="crest">🪔</div>
+  <p class="script e1">Happy Diwali</p>
+  <p class="e2">🎵 Tap anywhere to start the celebration 🎵</p>
+</div>
+<main>
+  <header class="hero">
+    <i class="lantern l1"></i><i class="lantern l2"></i><i class="fl" aria-hidden="true"></i>
+    <div class="crest" aria-hidden="true">🪔</div>
+    <h1 class="script big"><span id="t1"></span><i class="caret" id="c1"></i></h1>
+    <p class="from"><small>From</small><br><span id="t2" class="script"></span></p>
+    <div class="orn" aria-hidden="true"><b></b>❀<b></b></div>
+  </header>
+
+  <section class="card" aria-labelledby="h-diya">
+    <h2 class="script" id="h-diya">Light Up the Diyas</h2>
+    <p class="pill">👆 Tap the “Light” button under each diya</p>
+    <div class="tray" id="tray"></div>
+    <p class="msg" id="beauty" hidden>Beautiful! You've filled this Diwali with light! ✨</p>
+  </section>
+
+  <section class="card" aria-labelledby="h-crk">
+    <h2 class="script" id="h-crk">Let's Celebrate with Crackers!</h2>
+    <p class="pill">👆 Tap “Fire!” under a cracker to light it up</p>
+    <div class="crackers" id="crackers">
+      <div class="ck"><i class="anar"></i><b>Anar</b><small>Flower Pot</small><button data-c="anar" aria-label="Fire the Anar flower pot">🔥 Fire!</button></div>
+      <div class="ck"><i class="chakri"></i><b>Chakri</b><small>Spinner</small><button data-c="chakri" aria-label="Fire the Chakri spinner">🔥 Fire!</button></div>
+      <div class="ck"><i class="phul"></i><b>Phuljhari</b><small>Sparkler</small><button data-c="phul" aria-label="Fire the Phuljhari sparkler">🔥 Fire!</button></div>
+      <div class="ck"><i class="rocket"></i><b>Rocket</b><small>Sky Blast</small><button data-c="rocket" aria-label="Launch the Rocket">🔥 Fire!</button></div>
+      <div class="ck"><i class="sky"></i><b>Sky Shots</b><small>Fireworks</small><button data-c="sky" aria-label="Fire the Sky Shots">🔥 Fire!</button></div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="blessing">May your days be as sweet as sweets and your life as bright as these lights. May happiness, peace and prosperity always find their way to you.</p>
+    <h2 class="script big2">Happy Diwali!</h2>
+    <p>With Love,</p><p class="script sign">Sidra Sheikh ❤️</p>
+  </footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
